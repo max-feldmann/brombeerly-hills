@@ -46,7 +46,7 @@ const DroneflightHero = () => {
           </div>
       </div>
 
-      <div className='absolute top-0 lg:-top-1/2 right-0 z-0' >
+      <div className='absolute top-0 right-0 z-0' >
         <div
           className='
           bg-gradient-to-br from-base-100 via-base-100/70 to-base-100/15 
@@ -59,8 +59,8 @@ const DroneflightHero = () => {
         ></div>
         <video
           ref={videoRef}
-          style={{}}
-          className=""
+          style={{minHeight: "1000px"}}
+          className="object-cover object-center"
           aria-label="Promotional video about our company"
           loop
         >
