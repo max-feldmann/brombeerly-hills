@@ -36,7 +36,7 @@ const DroneflightHero = () => {
               <div className="col-span-12 md:col-span-9 flex flex-col justify-center">
                 <div>
 
-                  <h1 className='text-3xl md:text-5xl lg:text-7xl font-semibold'>Hier wird eine Headline zu unserem mega super tollen Projekt stehen.</h1>
+                  <h1 className='text-3xl md:text-5xl lg:text-7xl font-semibold'>Das (fast) verlorene Paradies vor der Haustür.</h1>
                   <button onClick={togglePlay} className="btn btn-primary btn-outline inline-flex items-center mt-8">
                     {isPlaying ? "Pause Video" : "Play Video"}
                   </button>
@@ -59,6 +59,7 @@ const DroneflightHero = () => {
         ></div>
         <video
           ref={videoRef}
+          playsInline
           style={{minHeight: "1000px"}}
           className="object-cover object-center"
           aria-label="Promotional video about our company"
