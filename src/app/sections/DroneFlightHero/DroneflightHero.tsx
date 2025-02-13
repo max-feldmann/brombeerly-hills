@@ -33,10 +33,10 @@ const DroneflightHero = () => {
       <div className="z-20 relative">
           <div className='p-4 container mx-auto h-full'>
             <div className="grid grid-cols-12 h-full">
-              <div className="col-span-12 md:col-span-9 flex flex-col justify-center">
+              <div className="col-span-12 md:col-span-5 flex flex-col justify-center">
                 <div>
-
                   <h1 className='text-3xl md:text-5xl lg:text-7xl font-semibold'>Paradise lost.</h1>
+                  <p className='mt-4'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                   <button onClick={togglePlay} className="btn btn-sm md:btn-md btn-primary btn-outline inline-flex items-center mt-8">
                     {isPlaying ? "Pause Video" : "Play Video"}
                   </button>
@@ -49,7 +49,7 @@ const DroneflightHero = () => {
       <div className='absolute top-0 right-0 z-0' >
         <div
           className='
-          bg-gradient-to-br from-base-100 via-base-100/70 to-base-100/15 
+          bg-gradient-to-br from-base-95 via-base-100/70 to-base-100/15 
           h-full w-full absolute top-0 r-0'
         ></div>
         <div
