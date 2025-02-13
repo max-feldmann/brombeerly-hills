@@ -29,15 +29,15 @@ const DroneflightHero = () => {
   }
 
   return (
-    <section className=' border-b border-gray-200 py-40 relative overflow-hidden'>
+    <section className=' border-b border-gray-700 py-40 relative overflow-hidden'>
       <div className="z-20 relative">
           <div className='p-4 container mx-auto h-full'>
             <div className="grid grid-cols-12 h-full">
               <div className="col-span-12 md:col-span-9 flex flex-col justify-center">
                 <div>
 
-                  <h1 className='text-3xl md:text-5xl lg:text-7xl font-semibold'>Das (fast) verlorene Paradies vor der Haustür.</h1>
-                  <button onClick={togglePlay} className="btn btn-small md:btn-md btn-primary btn-outline inline-flex items-center mt-8">
+                  <h1 className='text-3xl md:text-5xl lg:text-7xl font-semibold'>Paradise lost.</h1>
+                  <button onClick={togglePlay} className="btn btn-sm md:btn-md btn-primary btn-outline inline-flex items-center mt-8">
                     {isPlaying ? "Pause Video" : "Play Video"}
                   </button>
                 </div>
