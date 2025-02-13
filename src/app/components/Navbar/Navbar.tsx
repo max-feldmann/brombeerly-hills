@@ -1,32 +1,22 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
   return (
     <header className='z-30 border-b border-gray-700'>
-
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">Brombeerly Hills</a>
+      <div className="navbar bg-base-100">
+        <div className="navbar-start">
+          <Link href="/" className="btn btn-ghost text-xl">Brombeerly Hills</Link>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            <li><Link href="/hub">Hub</Link></li>
+          </ul>
+        </div>
+        <div className="navbar-end">
+          <a className="btn btn-primary btn-sm md:btn-md">Mitmachen</a>
+        </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </details>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn btn-primary btn-sm md:btn-md">Mitmachen</a>
-      </div>
-    </div>
     </header>
   )
 }
