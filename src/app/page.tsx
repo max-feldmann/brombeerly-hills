@@ -20,7 +20,7 @@ export default function Home() {
                   <Paragraph>Unsere heimischen Streuobstwiesen, ein enorm wichtiges Ökosystem, sind vom Aussterben bedroht.</Paragraph>
                   <Link href="/" className="btn btn-outline btn-sm btn-primary">Warum das so ist</Link>
                 </div>
-                <div className="col-span-2 lg:col-span-1 relative">
+                <div className="col-span-2 lg:col-span-1 | relative | lg:border-l border-gray-700">
                   <div
                     className='
                     bg-gradient-to-b from-base-100/90 via-base-100/70 to-base-100/15 
