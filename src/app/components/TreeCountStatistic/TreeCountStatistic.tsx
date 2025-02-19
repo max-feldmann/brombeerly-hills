@@ -46,7 +46,7 @@ const CustomTooltip = ({ payload, label } : CustomTooltipProps) => {
   return null;
 };
 
-const MyChart = () => {
+const TreeCountStatistic = () => {
   return (
     <ResponsiveContainer width="100%" height={300}>
       <AreaChart data={data}>
@@ -66,4 +66,4 @@ const MyChart = () => {
   );
 };
 
-export default MyChart;
+export default TreeCountStatistic;

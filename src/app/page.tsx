@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Headline from "./components/Headline/Headline";
 import Paragraph from "./components/Paragraph/Paragraph";
-import MyChart from "./components/MyChart/MyChart";
+import TreeCountStatistic from "./components/TreeCountStatistic/TreeCountStatistic";
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
                 <Headline as="h2">2 Der Bestand an Streuobst in Deutschland geht seit den 50ern verloren</Headline>
                 <Paragraph>Wenn wir nicht aufpassen, isses bald ganz weg, gell.</Paragraph>
                 <div className="mt-16">
-                  <MyChart />
+                  <TreeCountStatistic />
                 </div>
               </div>
             </div>
