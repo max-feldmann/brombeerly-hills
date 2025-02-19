@@ -11,7 +11,7 @@ const data = [
   { name: "2025", value: 37000 },
 ];
 
-const getInfoLabel = (label: string) => {
+const getInfoLabel = (label: string | undefined) => {
   if (label === "1952") {
     return "Hier war'n mer ma";
   } else if (label === "1964") {
@@ -27,7 +27,7 @@ const getInfoLabel = (label: string) => {
 
 interface CustomTooltipProps {
   active?: boolean;
-  payload?: unknown[];
+  payload?: { value: number }[];
   label?: string;
 }
 
