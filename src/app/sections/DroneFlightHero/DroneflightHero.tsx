@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { useRef, useState } from "react"
 
@@ -37,9 +38,12 @@ const DroneflightHero = () => {
                 <div>
                   <h1 className='text-3xl md:text-5xl lg:text-7xl font-semibold'>Paradise lost.</h1>
                   <p className='mt-4'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                  <button onClick={togglePlay} className="btn btn-sm md:btn-md btn-primary btn-outline inline-flex items-center mt-8">
-                    {isPlaying ? "Pause Video" : "Play Video"}
-                  </button>
+                  <div className='mt-8 flex gap-2'>
+                    <Link href="/" className="btn btn-sm md:btn-md btn-primary">Mitmachen</Link>
+                    <button onClick={togglePlay} className="btn btn-sm md:btn-md btn-primary btn-outline">
+                      {isPlaying ? "Video pausieren" : "Video abspielen"}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
