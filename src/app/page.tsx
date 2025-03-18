@@ -4,6 +4,7 @@ import Link from "next/link";
 import Headline from "./components/Headline/Headline";
 import Paragraph from "./components/Paragraph/Paragraph";
 import TreeCountStatistic from "./components/TreeCountStatistic/TreeCountStatistic";
+import SliderFullWidth from "./components/SliderFullWidth/SliderFullWidth";
 
 export default function Home() {
   return (
@@ -60,8 +61,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="container mx-auto">
+      <section className="border-b border-gray-700">
+        <div className="container mx-auto flex flex-col items-center py-20">
+          <div className="flex flex-col md:items-center sm:w-3/4">
+            <Headline as="h2">Hier ist ein Slider</Headline>
+            <Paragraph>Schau doch mal!</Paragraph>
+          </div>
+          <div className="flex justify-center">
+            <div className="md:w-3/5 border border-gray-700 sm:rounded-lg overflow-hidden">
+              <SliderFullWidth />
+            </div>
+          </div>
         </div>
       </section>
 
