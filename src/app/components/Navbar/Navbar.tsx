@@ -4,7 +4,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <header className='z-30 border-b border-gray-700'>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 container mx-auto">
         <div className="navbar-start">
           <Link href="/" className="btn btn-ghost text-xl">Brombeerly Hills</Link>
         </div>
