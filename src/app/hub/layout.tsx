@@ -11,7 +11,7 @@ export default function HubLayout({
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col justify-center">
         {/* Page content here */}
-          <div className="p-4 flex-grow">
+          <div className="p-4 grow">
             {children}
           </div>
         <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">

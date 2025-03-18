@@ -25,7 +25,7 @@ export default function Home() {
                 <div className="col-span-2 lg:col-span-1 | relative | lg:border-l border-gray-700">
                   <div
                     className='
-                    bg-gradient-to-b from-base-100/90 via-base-100/70 to-base-100/15 
+                    bg-linear-to-b from-base-100/90 via-base-100/70 to-base-100/15 
                     h-full w-full absolute top-0 r-0'
                   ></div>
                   <Image src={"/image/demofoto1.webp"} width={1920} height={1080} alt="Demo" className="image-full"/>
