@@ -25,22 +25,25 @@ const page = () => {
                 <div className="grid grid-cols-3">
                     <div className="col-span-3 lg:col-span-1 border-r border-gray-700">
                         <FeaturedCard
-                            headline="Mitmachen"
-                            paragraph="Du hast Bauholz oder Werkzeug übrig?"
+                            headline="Sachspenden"
+                            paragraph="Du hast Bauholz oder Werkzeug übrig? Wir nehmen es gerne entgegen!"
+                            cardLink='/hub/helfen/sachspenden'
                             imageUrl="/image/sachspenden.webp"
                         />
                     </div>
                     <div className="col-span-3 lg:col-span-1 border-r border-gray-700">
                         <FeaturedCard
-                            headline="Mitmachen"
-                            paragraph="Du hast Bauholz oder Werkzeug übrig?"
+                            headline="Finanzielle Unterstützung"
+                            paragraph="Für Pacht, Werkzeug und Material benötigen wir finanzielle Unterstützung."
+                            cardLink='/hub/helfen/finanzielle-unterstuetzung'
                             imageUrl="/image/sachspenden.webp"
                         />
                     </div>
                     <div className="col-span-3 lg:col-span-1">
                         <FeaturedCard
-                            headline="Mitmachen"
-                            paragraph="Du hast Bauholz oder Werkzeug übrig?"
+                            headline="Anpacken"
+                            paragraph="Du möchtest aktiv mithelfen? Wir freuen uns über jede helfende Hand!"
+                            cardLink='/hub/helfen/anpacken'
                             imageUrl="/image/sachspenden.webp"
                         />
                     </div>

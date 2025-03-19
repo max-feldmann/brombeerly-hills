@@ -9,10 +9,11 @@ import { ArrowLongRightIcon } from '@heroicons/react/16/solid';
 interface FeatureCardProps {
     headline: string;
     paragraph: string;
+    cardLink: string;
     imageUrl: string;
 }
 
-const FeaturedCard = ({headline, paragraph, imageUrl} : FeatureCardProps) => {
+const FeaturedCard = ({headline, paragraph, cardLink, imageUrl} : FeatureCardProps) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -22,7 +23,7 @@ const FeaturedCard = ({headline, paragraph, imageUrl} : FeatureCardProps) => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >   
-            <Link href="/mitmachen">
+            <Link href={cardLink}>
                 <div className={`${isHovered && "opacity-85"} bg-linear-to-br from-gray-950 to-gray-950/30 absolute top-0 left-0 w-full h-full`}></div>
                 <div className="relative aspect-square">
                     <div className="flex flex-col h-full justify-between">
