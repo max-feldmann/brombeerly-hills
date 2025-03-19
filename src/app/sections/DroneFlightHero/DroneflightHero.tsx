@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { useRef, useState } from "react"
+import { cormorantGaramond } from '../../../../public/styles/fonts'
 
 const DroneflightHero = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -36,10 +37,10 @@ const DroneflightHero = () => {
             <div className="grid grid-cols-12 h-full">
               <div className="col-span-12 md:col-span-5 flex flex-col justify-center">
                 <div>
-                  <h1 className='text-3xl md:text-5xl lg:text-7xl font-semibold'>Paradise lost.</h1>
+                  <h1 className={` ${cormorantGaramond.className} text-3xl md:text-5xl lg:text-7xl font-semibold`}>Paradise lost.</h1>
                   <p className='mt-4'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                   <div className='mt-8 flex gap-2'>
-                    <Link href="/" className="btn btn-sm md:btn-md btn-primary">Mitmachen</Link>
+                    <Link href="/mitmachen" className="btn btn-sm md:btn-md btn-primary">Mitmachen</Link>
                     <button onClick={togglePlay} className="btn btn-sm md:btn-md btn-primary btn-outline">
                       {isPlaying ? "Video pausieren" : "Video abspielen"}
                     </button>

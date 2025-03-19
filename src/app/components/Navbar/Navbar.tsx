@@ -14,7 +14,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-primary btn-sm md:btn-md">Mitmachen</a>
+          <Link 
+            href="/mitmachen" 
+            className="btn btn-primary btn-sm md:btn-md">
+            Mitmachen
+          </Link>
         </div>
       </div>
     </header>
