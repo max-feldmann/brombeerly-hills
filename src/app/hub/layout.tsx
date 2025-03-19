@@ -27,7 +27,7 @@ export default function HubLayout({
       </div>
       <div className="drawer-side h-[calc(100vh-4rem)] top-16">
         <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay "></label>
-        <ul className="menu text-base-content min-h-full w-80 p-4 pt-10 sticky top-0">
+        <ul className="menu | bg-base-300/30 backdrop-blur-2xl lg:bg-base-300/0 lg:backdrop-blur-none | border-r border-gray-700 | text-base-content min-h-full w-80 | p-4 pt-10 | sticky top-0">
           {/* Sidebar content here */}
             {
               categories.map((category) => (
