@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import { getHubCategories, getPostsByCategory } from "@/lib/blog";
+import { ChevronRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 
 export default function HubLayout({
@@ -15,8 +16,9 @@ export default function HubLayout({
       <div className="drawer-content flex flex-col justify-center">
         {/* Page content here */}
           <div className=" grow">
-            <div className="py-2 border-b border-gray-800 lg:hidden">
-              <label htmlFor="my-drawer-2" className="btn btn-ghost drawer-button">
+            <div className="py-3 px-4 border-b border-gray-800 lg:hidden">
+              <label htmlFor="my-drawer-2" className=" flex items-center drawer-button">
+                <ChevronRightIcon className="size-5 mr-0" />
                 Menü
               </label>
             </div>
