@@ -23,7 +23,7 @@ const page = () => {
                         />
                 </div>
                 <div className="grid grid-cols-3">
-                    <div className="col-span-3 lg:col-span-1 border-r border-gray-700">
+                    <div className="col-span-3 lg:col-span-1 lg:border-r border-gray-700">
                         <FeaturedCard
                             headline="Sachspenden"
                             paragraph="Du hast Bauholz oder Werkzeug übrig? Wir nehmen es gerne entgegen!"
@@ -31,7 +31,7 @@ const page = () => {
                             imageUrl="/image/sachspenden.webp"
                         />
                     </div>
-                    <div className="col-span-3 lg:col-span-1 border-r border-gray-700">
+                    <div className="col-span-3 lg:col-span-1 lg:border-r border-gray-700">
                         <FeaturedCard
                             headline="Finanzielle Unterstützung"
                             paragraph="Für Pacht, Werkzeug und Material benötigen wir finanzielle Unterstützung."
