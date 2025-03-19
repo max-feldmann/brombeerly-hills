@@ -9,15 +9,20 @@ import React from 'react'
 type Params = {
   params: Promise<{
     slug: string;
+    category: string;
   }>;
 };
 
 
 export default async function Post(props: Params) {
   const params = await props.params;
-  const post = getPostContent(params.slug);
 
-  if (!post) {
+  const post = getPostContent(params.category, params.slug);
+
+  console.log(params)
+
+  if (!post
+  ) {
     return (
       <div>
         <Headline as="h1">Beitrag konnte nicht gefunden werden!</Headline>
@@ -26,7 +31,8 @@ export default async function Post(props: Params) {
     )
   }
 
-  const content = await markdownToHtml(post.content);
+  const content = await markdownToHtml(post.content || "");
+
   return (
       <main>
           <div className="my-8"></div>
