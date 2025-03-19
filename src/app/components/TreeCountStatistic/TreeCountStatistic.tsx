@@ -2,6 +2,7 @@
 
 import React from "react";
 import { XAxis, YAxis, Tooltip, ResponsiveContainer, AreaChart, Area, Legend } from "recharts";
+import { cormorantGaramond } from "../../../../public/styles/fonts";
 
 const data = [
   { name: "1952", value: 400000 },
@@ -37,7 +38,7 @@ const CustomTooltip = ({ payload, label } : CustomTooltipProps) => {
   if (payload && payload.length) {
     return (
       <div className="bg-white/10 rounded-lg shadow-xl backdrop-blur-md p-5 border border-gray-500">
-        <p className="mb-3">Baumbestand: {payload[0].value}</p>
+        <p className={` ${cormorantGaramond.className} mb-3`}>Baumbestand: {payload[0].value}</p>
         <p className="desc">{getInfoLabel(label)}</p>
       </div>
     );

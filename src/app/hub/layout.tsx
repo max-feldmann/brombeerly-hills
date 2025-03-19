@@ -10,7 +10,7 @@ export default function HubLayout({
   const categories = getHubCategories();
 
   return (
-    <div className="drawer lg:drawer-open ">
+    <div className="drawer lg:drawer-open container mx-auto">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col justify-center">
         {/* Page content here */}
@@ -27,7 +27,7 @@ export default function HubLayout({
       </div>
       <div className="drawer-side h-[calc(100vh-4rem)] top-16">
         <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay "></label>
-        <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4 pt-10 sticky top-0">
+        <ul className="menu text-base-content min-h-full w-80 p-4 pt-10 sticky top-0">
           {/* Sidebar content here */}
             {
               categories.map((category) => (
