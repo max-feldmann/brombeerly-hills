@@ -60,8 +60,8 @@ const TreeCountStatistic = () => {
         <YAxis hide />
         <XAxis  dataKey="name" />
         <Tooltip content={<CustomTooltip />} />
-        <Area type="monotone" dataKey="value" name="Streuobstbestand" stroke="#18A048" strokeWidth={2} fillOpacity={1} fill="url(#colorUv)" />
-        <Legend align="left"/>
+        <Area type="monotone" className={`${cormorantGaramond.className}`} dataKey="value" name="Streuobstbestand" stroke="#18A048" strokeWidth={2} fillOpacity={1} fill="url(#colorUv)" />
+        <Legend align="left" />
       </AreaChart>
     </ResponsiveContainer>
   );

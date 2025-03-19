@@ -3,12 +3,21 @@ import React from "react";
 interface ParagraphProps {
   className?: string;
   children: React.ReactNode;
+  size?: "xs" | "sm" | "md" | "lg"; // Optional size prop
 }
 
-const Paragraph: React.FC<ParagraphProps> = ({ className = "", children }) => {
-  const baseStyles = "text-gray-300 text-base md:text-lg leading-relaxed mb-4";
+const Paragraph: React.FC<ParagraphProps> = ({ className = "", children, size = "md" }) => {
+  const baseStyles = "text-gray-300 leading-relaxed mb-4";
 
-  return <p className={`${baseStyles} ${className}`}>{children}</p>;
+  // Map size prop to corresponding text size classes
+  const sizeStyles = {
+    xs: "text-xs",
+    sm: "text-sm",
+    md: "text-base md:text-lg", // Default size
+    lg: "text-lg md:text-xl",
+  };
+
+  return <p className={`${baseStyles} ${sizeStyles[size]} ${className}`}>{children}</p>;
 };
 
 export default Paragraph;
