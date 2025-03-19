@@ -7,7 +7,7 @@ interface HeadlineProps {
 }
 
 const Headline: React.FC<HeadlineProps> = ({ as: Tag = "h2", className = "", children }) => {
-  const baseStyles = "font-semibold";
+  const baseStyles = "font-semibold mb-4 md:mb-6";
   const sizes = {
     h1: "text-4xl md:text-5xl",
     h2: "tracking-tighter text-2xl mb-6",
