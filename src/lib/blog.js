@@ -39,3 +39,13 @@ export function getPostContent(category, slug) {
 
   return { data, content };
 }
+
+// Converts "Getting Started" → "getting-started"
+export function slugify(text) {
+  return text.toLowerCase().replace(/\s+/g, "-"); 
+}
+
+// Converts "getting-started" → "Getting Started"
+export function deslugify(slug) {
+  return slug.replace(/-/g, " "); 
+}

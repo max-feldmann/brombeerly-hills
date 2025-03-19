@@ -3,8 +3,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <header className='z-30 border-b border-gray-700'>
-      <div className="navbar bg-base-100 container mx-auto">
+    <header className='z-30 border-b bg-base-100/30 backdrop-blur-lg border-gray-700 sticky top-0'>
+      <div className="navbar  container mx-auto">
         <div className="navbar-start">
           <Link href="/" className="btn btn-ghost text-xl">Brombeerly Hills</Link>
         </div>

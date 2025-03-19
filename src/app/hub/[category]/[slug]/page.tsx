@@ -19,8 +19,6 @@ export default async function Post(props: Params) {
 
   const post = getPostContent(params.category, params.slug);
 
-  console.log(params)
-
   if (!post
   ) {
     return (
