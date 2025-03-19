@@ -14,7 +14,7 @@ const Paragraph: React.FC<ParagraphProps> = ({ className = "", children, size = 
     xs: "text-xs",
     sm: "text-sm",
     md: "text-base md:text-lg", // Default size
-    lg: "text-lg md:text-xl",
+    lg: "text-base md:text-lg md:text-xl",
   };
 
   return <p className={`${baseStyles} ${sizeStyles[size]} ${className}`}>{children}</p>;
