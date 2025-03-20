@@ -36,7 +36,7 @@ const page = () => {
                             headline="Finanzielle Unterstützung"
                             paragraph="Für Pacht, Werkzeug und Material benötigen wir finanzielle Unterstützung."
                             cardLink='/hub/helfen/finanzielle-unterstuetzung'
-                            imageUrl="/image/sachspenden.webp"
+                            imageUrl="/image/finanzielle-unterstuetzung.webp"
                         />
                     </div>
                     <div className="col-span-3 lg:col-span-1">
@@ -44,7 +44,7 @@ const page = () => {
                             headline="Anpacken"
                             paragraph="Du möchtest aktiv mithelfen? Wir freuen uns über jede helfende Hand!"
                             cardLink='/hub/helfen/anpacken'
-                            imageUrl="/image/sachspenden.webp"
+                            imageUrl="/image/anpacken-2.webp"
                         />
                     </div>
                 </div>
