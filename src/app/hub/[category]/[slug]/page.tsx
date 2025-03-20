@@ -38,7 +38,7 @@ export default async function Post(props: Props) {
   ) {
     return (
       <div>
-        <Headline as="h1">Beitrag konnte nicht gefunden werden!</Headline>
+        <Headline as="h1">Beitrag konnte nicht gefunden werden</Headline>
         <Paragraph>Der Beitrag konnte nicht gefunden werden. Bitte überprüfe die URL. Vielleicht haben wir den Beitrag in der Zwischenzeit auch gelöscht oder die Inhalte verschoben.</Paragraph>
       </div>
     )
