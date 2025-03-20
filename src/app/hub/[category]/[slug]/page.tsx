@@ -4,8 +4,8 @@ import { PostBody } from '@/app/components/PostBody/PostBody';
 import PostHeader from '@/app/components/PostHeader/PostHeader';
 import { getPostContent } from '@/lib/blog';
 import markdownToHtml from '@/lib/markdownToHtml';
-import React from 'react'
-import type { Metadata } from 'next'
+import React from 'react';
+import type { Metadata } from 'next';
 
 interface PageProps {
   params: {
@@ -14,41 +14,43 @@ interface PageProps {
   };
 }
 
-export async function generateMetadata({ params }: PageProps ): Promise<Metadata> { 
-    const post = getPostContent(params.category, params.slug);
-    if (post) {
-      return {
-        title: "Hub - " + post.data.title,
-        description: post.data.metaDescription
-      }
-    } else {
-      return {
-        title: "Knowledge Hub",
-        description: "Hier findest du alle Informationen, die du brauchst, um aktiv zu werden."
-      }
-    }
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const post = getPostContent(params.category, params.slug);
+  if (post) {
+    return {
+      title: 'Hub - ' + post.data.title,
+      description: post.data.metaDescription,
+    };
+  } else {
+    return {
+      title: 'Knowledge Hub',
+      description: 'Hier findest du alle Informationen, die du brauchst, um aktiv zu werden.',
+    };
+  }
 }
 
-export default async function Post({params}: PageProps) {
+export default async function Post({ params }: PageProps) {
   const post = getPostContent(params.category, params.slug);
 
-  if (!post
-  ) {
+  if (!post) {
     return (
       <div>
         <Headline as="h1">Beitrag konnte nicht gefunden werden!</Headline>
-        <Paragraph>Der Beitrag konnte nicht gefunden werden. Bitte überprüfe die URL. Vielleicht haben wir den Beitrag in der Zwischenzeit auch gelöscht oder die Inhalte verschoben.</Paragraph>
+        <Paragraph>
+          Der Beitrag konnte nicht gefunden werden. Bitte überprüfe die URL. Vielleicht haben wir
+          den Beitrag in der Zwischenzeit auch gelöscht oder die Inhalte verschoben.
+        </Paragraph>
       </div>
-    )
+    );
   }
 
-  const content = await markdownToHtml(post.content || "");
+  const content = await markdownToHtml(post.content || '');
 
   return (
-      <main>
-          <div className="my-8"></div>
-          <PostHeader postTitle={post?.data.title} />
-          <PostBody content={content} />
-      </main>
-  )
+    <main>
+      <div className="my-8"></div>
+      <PostHeader postTitle={post?.data.title} />
+      <PostBody content={content} />
+    </main>
+  );
 }
