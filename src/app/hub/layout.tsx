@@ -10,8 +10,6 @@ export default function HubLayout({
 }>) {
   const categories = getHubCategories();
 
-
-
   return (
     <div className="drawer lg:drawer-open container mx-auto">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -31,17 +29,26 @@ export default function HubLayout({
       </div>
       <div className="drawer-side h-[calc(100vh-4rem)] top-16">
         <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay "></label>
-        <ul className="menu | bg-base-300/30 backdrop-blur-2xl lg:bg-base-300/0 lg:backdrop-blur-none | border-r border-gray-700 | text-base-content min-h-full w-80 | p-4 pt-10 | sticky top-0">
+        <ul 
+          className="menu | bg-base-300/30 backdrop-blur-2xl lg:bg-base-300/0 lg:backdrop-blur-none | border-r border-gray-700 | text-base-content min-h-full w-80 | p-4 pt-10 | sticky top-0"
+          role="seitennavigation"
+          >
           {/* Sidebar content here */}
             {
               categories.map((category) => (
-                <li key={category} className="mt-4">
+                <li 
+                  key={category} className="mt-4"
+                  role="kategorie"
+                  >
                     <span className="font-semibold">
                       {category}
                       </span>
                   <ul className="ml-4">
                     {getPostsByCategory(category).map((post) => (
-                      <li key={post.slug}>
+                      <li 
+                        key={post.slug}
+                        role="none"
+                      >
                         <HubSidebarNavitem label={post.title} href={`/hub/${category}/${post.slug}`} slug={post.slug} />
                       </li>
                     ))}

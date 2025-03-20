@@ -12,11 +12,12 @@ interface HubSidebarNavitemProps {
 
 const HubSidebarNavitem = ({label, href, slug} : HubSidebarNavitemProps) => {
     const currentUrl = usePathname().split('/');
-    console.log ("currenturl: " + currentUrl);
-    console.log ("------slug: " + slug);
-
+    
     return (
-        <Link href={href} className={`${ currentUrl[currentUrl.length -1] === slug ? "text-primary" : "" }`}>
+        <Link 
+            href={href} className={`${ currentUrl[currentUrl.length -1] === slug ? "text-primary" : "" }`}
+            role='menüeintrag'
+        >
             {label}
         </Link>
     )
