@@ -1,7 +1,7 @@
 import "@/app/globals.css";
 import { getHubCategories, getPostsByCategory } from "@/lib/blog";
 import { ChevronRightIcon } from "@heroicons/react/16/solid";
-import Link from "next/link";
+import HubSidebarNavitem from "../components/HubSidebarNavitem/HubSidebarNavitem";
 
 export default function HubLayout({
   children,
@@ -9,6 +9,8 @@ export default function HubLayout({
   children: React.ReactNode;
 }>) {
   const categories = getHubCategories();
+
+
 
   return (
     <div className="drawer lg:drawer-open container mx-auto">
@@ -40,9 +42,7 @@ export default function HubLayout({
                   <ul className="ml-4">
                     {getPostsByCategory(category).map((post) => (
                       <li key={post.slug}>
-                        <Link href={`/hub/${category}/${post.slug}`}>
-                          {post.title}
-                        </Link>
+                        <HubSidebarNavitem label={post.title} href={`/hub/${category}/${post.slug}`} slug={post.slug} />
                       </li>
                     ))}
                   </ul>
