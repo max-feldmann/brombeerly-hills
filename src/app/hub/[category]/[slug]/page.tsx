@@ -14,7 +14,7 @@ interface PageProps {
   };
 }
 
-export async function generateMetadata({ params }: Props ): Promise<Metadata> { 
+export async function generateMetadata({ params }: PageProps ): Promise<Metadata> { 
     const post = getPostContent(params.category, params.slug);
     if (post) {
       return {
