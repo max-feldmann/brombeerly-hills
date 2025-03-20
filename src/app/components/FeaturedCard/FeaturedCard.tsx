@@ -24,7 +24,7 @@ const FeaturedCard = ({headline, paragraph, cardLink, imageUrl} : FeatureCardPro
             onMouseLeave={() => setIsHovered(false)}
         >   
             <Link href={cardLink}>
-                <div className={`${isHovered && "opacity-85"} bg-linear-to-br from-gray-950 to-gray-950/30 absolute top-0 left-0 w-full h-full`}></div>
+                <div className={`${isHovered && "lg:opacity-85"} bg-linear-to-br from-gray-950 to-gray-950/30 absolute top-0 left-0 w-full h-full`}></div>
                 <div className="relative aspect-square">
                     <div className="flex flex-col h-full justify-between">
                         <div>
@@ -32,7 +32,7 @@ const FeaturedCard = ({headline, paragraph, cardLink, imageUrl} : FeatureCardPro
                             <Paragraph size="lg">{paragraph}</Paragraph>
                         </div>
 
-                        <div className={`${isHovered && "gap-3"} flex gap-1 transition-all ease-in-out items-center`}>
+                        <div className={`${isHovered && "lg:gap-3"} flex gap-1 transition-all ease-in-out items-center`}>
                             <span className='text-lg'>Mehr Infos</span>
                             <ArrowLongRightIcon className='size-5' />
                         </div>
