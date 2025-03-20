@@ -29,16 +29,14 @@ export async function generateMetadata({ params }: Props ): Promise<Metadata> {
     }
 }
 
-export default async function Post(props: Props) {
-  const params = props.params;
-
+export default async function Post({params}: Props) {
   const post = getPostContent(params.category, params.slug);
 
   if (!post
   ) {
     return (
       <div>
-        <Headline as="h1">Beitrag konnte nicht gefunden werden</Headline>
+        <Headline as="h1">Beitrag konnte nicht gefunden werden!</Headline>
         <Paragraph>Der Beitrag konnte nicht gefunden werden. Bitte überprüfe die URL. Vielleicht haben wir den Beitrag in der Zwischenzeit auch gelöscht oder die Inhalte verschoben.</Paragraph>
       </div>
     )
