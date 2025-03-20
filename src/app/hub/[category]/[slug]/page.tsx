@@ -7,12 +7,12 @@ import markdownToHtml from '@/lib/markdownToHtml';
 import React from 'react'
 import type { Metadata } from 'next'
 
-type Props = {
+interface PageProps {
   params: {
     slug: string;
     category: string;
   };
-};
+}
 
 export async function generateMetadata({ params }: Props ): Promise<Metadata> { 
     const post = getPostContent(params.category, params.slug);
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props ): Promise<Metadata> {
     }
 }
 
-export default async function Post({params}: Props) {
+export default async function Post({params}: PageProps) {
   const post = getPostContent(params.category, params.slug);
 
   if (!post
