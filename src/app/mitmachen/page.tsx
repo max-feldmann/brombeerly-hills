@@ -9,7 +9,7 @@ const page = () => {
   return (
     <>
         <section className='mb-20'>
-            <div className='container mx-auto lg:my-28 border-b lg:border border-gray-700'>
+            <div className='container mx-auto lg:my-28 | border-b lg:border border-gray-700'>
                 <div className="p-6 md:p-10 lg:p-20 | flex flex-col lg:items-center items-start">
                     <div className='max-w-2/3 flex flex-col items-start lg:items-center'>
                         <span className={`${cormorantGaramond.className} bg-primary/10 rounded-lg font-semibold py-2 px-5`}>Aktiver Naturschutz</span>

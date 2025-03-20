@@ -38,7 +38,7 @@ const DroneflightHero = () => {
               <div className="col-span-12 md:col-span-5 flex flex-col justify-center">
                 <div>
                   <h1 className={` ${cormorantGaramond.className} text-3xl md:text-5xl lg:text-7xl font-semibold`}>Paradise lost.</h1>
-                  <p className='mt-4'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                  <p className='mt-4'>Die Streuobstwiesen in Deutschland, ein Paradies für Natur und Mensch, sind in Gefahr. Wir restaurieren und pflegen eine alte Streuobstwiese in Bamberg, um ein Stück Kulturlandschaft zu erhalten.</p>
                   <div className='mt-8 flex gap-2'>
                     <Link href="/mitmachen" className="btn btn-sm md:btn-md btn-primary">Mitmachen</Link>
                     <button onClick={togglePlay} className="btn btn-sm md:btn-md btn-primary btn-outline">

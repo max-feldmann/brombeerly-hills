@@ -20,7 +20,7 @@ export default function Home() {
                 <div className="ml-4 xl:ml-0 py-20 pr-4 | col-span-2 lg:col-span-1" >
                   <Headline as="h2">Das Paradies ist in Gefahr!</Headline>
                   <Paragraph>Unsere heimischen Streuobstwiesen, ein enorm wichtiges Ökosystem, sind vom Aussterben bedroht.</Paragraph>
-                  <Link href="/" className="btn btn-outline btn-sm btn-primary">Warum das so ist</Link>
+                  <Link href="/hub/allgemein/streuobst-in-gefahr" className="btn btn-outline btn-sm btn-primary">Warum das so ist</Link>
                 </div>
                 <div className="col-span-2 lg:col-span-1 | relative | lg:border-l border-gray-700">
                   <div
@@ -47,6 +47,7 @@ export default function Home() {
               <div className="px-4 xl:px-0 py-20" style={{ maxWidth: "752px"}}>
                 <Headline as="h2">Warum Streuobstwiesen so geil sind</Headline>
                 <Paragraph>Ja hier wird wsl. auch text stehen oder so. Zumindest würde ich sagen ist das basierend auf extrem plausiblen Erfahrungen der Vergangenheit sehr wahrscheinlich.</Paragraph>
+                <Link href="/hub/allgemein/streuobst-vorteile" className="btn btn-outline btn-sm btn-primary">Warum das so ist</Link>
               </div>
             </div>
 
@@ -64,7 +65,7 @@ export default function Home() {
       <section className="border-b border-gray-700">
         <div className="container mx-auto flex flex-col items-center py-20">
           <div className="flex flex-col md:items-center sm:w-3/4">
-            <Headline as="h2">Hier ist ein Slider</Headline>
+            <Headline as="h2">Unser Projekt in Bamberg</Headline>
             <Paragraph>Schau doch mal!</Paragraph>
           </div>
           <div className="flex justify-center">
