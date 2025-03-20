@@ -1,5 +1,6 @@
 ---
 title: "Finanzielle Unterstützung"
+metaDescription: "Material, Werkzeuge, Benzin, Verpflegung - All das ist ziemlich teuer! Wenn du kannst, unterstütze unser Projekt gerne mit einer kleinen, finanziellen Spende."
 ---
 
 ---

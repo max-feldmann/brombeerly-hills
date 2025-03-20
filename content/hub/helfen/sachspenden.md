@@ -1,5 +1,6 @@
 ---
 title: "Sachspenden"
+metaDescription: "Von Bauholz bis Werkzeug. Bring uns gerne vorbei, was du abgeben kannst. Wir finden für vieles eine Verwendung bei unserem Projekt!"
 ---
 
 ---

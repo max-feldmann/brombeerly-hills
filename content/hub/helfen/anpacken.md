@@ -1,5 +1,6 @@
 ---
 title: "Anpacken"
+metaDescription: "Wir brauchen jede Menge tatkräftige Unterstützung. Hier erfährst du, wie du mit anpacken kannst"
 ---
 
 ---

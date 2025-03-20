@@ -5,6 +5,12 @@ import Headline from "./components/Headline/Headline";
 import Paragraph from "./components/Paragraph/Paragraph";
 import TreeCountStatistic from "./components/TreeCountStatistic/TreeCountStatistic";
 import SliderFullWidth from "./components/SliderFullWidth/SliderFullWidth";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Brombeerly Hills",
+  description: "Aktiver Naturschutz! Informiere dich hier über unser Projekt zur Rettung einer uralten Streuobstwiese in Bamberg.",
+}
 
 export default function Home() {
   return (

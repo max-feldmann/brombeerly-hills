@@ -5,17 +5,32 @@ import PostHeader from '@/app/components/PostHeader/PostHeader';
 import { getPostContent } from '@/lib/blog';
 import markdownToHtml from '@/lib/markdownToHtml';
 import React from 'react'
+import type { Metadata } from 'next'
 
-type Params = {
-  params: Promise<{
+type Props = {
+  params: {
     slug: string;
     category: string;
-  }>;
+  };
 };
 
+export async function generateMetadata({ params }: Props ): Promise<Metadata> { 
+    const post = getPostContent(params.category, params.slug);
+    if (post) {
+      return {
+        title: "Hub - " + post.data.title,
+        description: post.data.metaDescription
+      }
+    } else {
+      return {
+        title: "Knowledge Hub",
+        description: "Hier findest du alle Informationen, die du brauchst, um aktiv zu werden."
+      }
+    }
+}
 
-export default async function Post(props: Params) {
-  const params = await props.params;
+export default async function Post(props: Props) {
+  const params = props.params;
 
   const post = getPostContent(params.category, params.slug);
 
