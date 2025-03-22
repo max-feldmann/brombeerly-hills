@@ -14,6 +14,7 @@ interface PageProps {
   };
 }
 
+// Dynamic Meta Info generation for hub pages
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = getPostContent(params.category, params.slug);
   if (post) {
@@ -35,7 +36,7 @@ export default async function Post({ params }: PageProps) {
   if (!post) {
     return (
       <div>
-        <Headline as="h1">Beitrag konnte nicht gefunden werden!</Headline>
+        <Headline as="h1">Beitrag konnte nicht gefunden werden</Headline>
         <Paragraph>
           Der Beitrag konnte nicht gefunden werden. Bitte überprüfe die URL. Vielleicht haben wir
           den Beitrag in der Zwischenzeit auch gelöscht oder die Inhalte verschoben.
