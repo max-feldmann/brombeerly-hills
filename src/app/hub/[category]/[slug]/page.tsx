@@ -5,32 +5,11 @@ import PostHeader from '@/app/components/PostHeader/PostHeader';
 import { getPostContent } from '@/lib/blog';
 import markdownToHtml from '@/lib/markdownToHtml';
 import React from 'react';
-import type { Metadata } from 'next';
 
-interface PageProps {
-  params: {
-    slug: string;
-    category: string;
-  };
-}
 
 type Params = Promise<{ slug: string[], category: string[] }>
 
-// Dynamic Meta Info generation for hub pages
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const post = getPostContent(params.category, params.slug);
-  if (post) {
-    return {
-      title: 'Hub - ' + post.data.title,
-      description: post.data.metaDescription,
-    };
-  } else {
-    return {
-      title: 'Knowledge Hub',
-      description: 'Hier findest du alle Informationen, die du brauchst, um aktiv zu werden.',
-    };
-  }
-}
+
 
 export default async function Post({ params }: { params: Params }) {
 
