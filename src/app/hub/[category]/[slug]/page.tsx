@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default async function Post({ params }: PageProps) {
+export default async function Post({ params }: { params: { slug: string; category: string } }) {
   const post = getPostContent(params.category, params.slug);
 
   if (!post) {
