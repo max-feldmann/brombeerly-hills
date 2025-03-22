@@ -14,6 +14,8 @@ interface PageProps {
   };
 }
 
+type Params = Promise<{ slug: string[], category: string[] }>
+
 // Dynamic Meta Info generation for hub pages
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = getPostContent(params.category, params.slug);
@@ -30,11 +32,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default async function Post({ params }: { params: Promise<{slug: string, category: string}> }) {
+export default async function Post({ params }: { params: Params }) {
 
-  const info = await params
+  const {category, slug} = await params
 
-  const post = getPostContent(info.category, info.slug);
+  const post = getPostContent(category, slug);
 
   if (!post) {
     return (
