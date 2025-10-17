@@ -54,11 +54,6 @@ const DroneflightHero = () => {
       <div className='absolute top-0 right-0 z-0' >
         <div
           className='
-          bg-linear-to-br from-base-95 via-base-100/70 to-base-100/15 
-          h-full w-full absolute top-0 r-0'
-        ></div>
-        <div
-          className='
           bg-linear-to-r from-base-100 via-base-100/70 to-base-100/15 
           h-full w-full absolute top-0 r-0'
         ></div>
