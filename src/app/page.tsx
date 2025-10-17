@@ -51,6 +51,7 @@ export default function Home() {
 
             <div className="col-span-2 lg:col-span-1 row-span-1 lg:row-span-2 | border-r-0 lg:border-r border-b  border-gray-700 | flex justify-end">
               <div className="px-4 xl:px-0 py-20" style={{ maxWidth: "752px"}}>
+                <Image src={"/animation/blackberry-animation.webp"} width={100} height={100} alt="animation" className="image-square mb-10"/>
                 <Headline as="h2">Warum Streuobstwiesen so geil sind</Headline>
                 <Paragraph>Ja hier wird wsl. auch text stehen oder so. Zumindest würde ich sagen ist das basierend auf extrem plausiblen Erfahrungen der Vergangenheit sehr wahrscheinlich.</Paragraph>
                 <Link href="/hub/allgemein/streuobst-vorteile" className="btn btn-outline btn-sm btn-primary">Warum das so ist</Link>
