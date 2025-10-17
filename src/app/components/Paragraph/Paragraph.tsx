@@ -7,7 +7,7 @@ interface ParagraphProps {
 }
 
 const Paragraph: React.FC<ParagraphProps> = ({ className = "", children, size = "md" }) => {
-  const baseStyles = "text-gray-300 leading-relaxed mb-4";
+  const baseStyles = "leading-relaxed mb-4";
 
   // Map size prop to corresponding text size classes
   const sizeStyles = {

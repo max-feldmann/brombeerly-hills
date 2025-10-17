@@ -41,8 +41,8 @@ export default function Home() {
 
             <div className="px-4 py-20 md:p-10 lg:p-20 | col-span-2 lg:col-span-1 row-span-1 lg:row-span-2 | border-b lg:border-b-0 border-gray-700">
               <div style={{ maxWidth: "752px"}}>
-                <Headline as="h2">Der Bestand an Streuobst in Deutschland geht seit den 50ern verloren</Headline>
-                <Paragraph>Wenn wir nicht aufpassen, isses bald ganz weg, gell.</Paragraph>
+                <Headline as="h2">Der Bestand an Streuobst in Deutschland geht seit dem 2. Weltkrieg verloren</Headline>
+                <Paragraph className="text-gray-700">Früher gab es Streuobstwiesen wie unsere in ganz Deutschland. Die Bestände an diesen wertvollen Biothopen haben sich allerdings im Laufe der Jahrzehnte drastisch reduziert.</Paragraph>
                 <div className="mt-16">
                   <TreeCountStatistic />
                 </div>
